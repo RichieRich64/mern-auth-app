@@ -35,7 +35,7 @@ export default function Profile() {
 
       toast.promise(updatePromise, {
         loading: 'Updating...',
-        success : <b>Update Successfully...!</b>,
+        success : <b>Update Successful...!</b>,
         error: <b>Could not Update!</b>
       });
 
@@ -61,7 +61,7 @@ export default function Profile() {
       <Toaster position='top-center' reverseOrder={false}></Toaster>
 
       <div className='flex justify-center items-center h-screen'>
-        <div className={`${styles.glass} ${extend.glass}`} style={{ width: "45%", paddingTop: '3em'}}>
+        <div className={`${styles.glass} ${extend.glass}`} style={{ width: "45%", height: "95%", paddingTop: '3em'}}>
 
           <div className="title flex flex-col items-center">
             <h4 className='text-5xl font-bold'>Profile</h4>

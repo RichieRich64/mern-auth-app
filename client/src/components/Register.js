@@ -7,7 +7,6 @@ import { registerValidation } from '../helper/validate';
 import convertToBase64 from '../helper/convert';
 import { registerUser } from '../helper/helper'
 
-
 import styles from '../styles/Username.module.css';
 
 export default function Register() {
@@ -48,7 +47,7 @@ export default function Register() {
       <Toaster position='top-center' reverseOrder={false}></Toaster>
 
       <div className='flex justify-center items-center h-screen'>
-        <div className={styles.glass} style={{ width: "45%", paddingTop: '3em'}}>
+        <div className={styles.glass} style={{ width: "45%", height: "90%", paddingTop: '3em' }}>
 
           <div className="title flex flex-col items-center">
             <h4 className='text-5xl font-bold'>Register</h4>
@@ -76,9 +75,8 @@ export default function Register() {
               <div className="text-center py-4">
                 <span className='text-gray-500'>Already Register? <Link className='text-red-500' to="/">Login Now</Link></span>
               </div>
-
           </form>
-
+          
         </div>
       </div>
     </div>
